@@ -1,30 +1,2221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>The Therapy Sessions Vol. 10 | After The Conversation</title>
+<title>The Therapy Sessions Vol. 10 | After The Conversation</title>
 
-  <meta name="description" content="The Therapy Sessions Vol. 10: After The Conversation. A New Age RnB & Soul Offering from The Music Therapy Room.">
+<meta name="description" content="The Therapy Sessions Vol. 10: After The Conversation. A New Age RnB & Soul Offering from The Music Therapy Room, curated and mixed by Mpho Mofokeng, The Music Therapist.">
 
-  
-  
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mphojohnmofokeng-dotcom.github.io/The-Therapy-Sessions-Vol10-New/">
+<meta property="og:title" content="The Therapy Sessions Vol. 10 | After The Conversation">
+<meta property="og:description" content="A New Age RnB & Soul Offering from The Music Therapy Room. Curated and mixed by Mpho Mofokeng, The Music Therapist.">
+<meta property="og:image" content="https://mphojohnmofokeng-dotcom.github.io/The-Therapy-Sessions-Vol10-New/cover.jpg">
+<meta property="og:image:alt" content="The Therapy Sessions Vol. 10 | After The Conversation">
+<meta property="og:site_name" content="The Music Therapy Room">
 
-  
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Therapy Sessions Vol. 10 | After The Conversation">
+<meta name="twitter:description" content="A New Age RnB & Soul Offering from The Music Therapy Room.">
+<meta name="twitter:image" content="https://mphojohnmofokeng-dotcom.github.io/The-Therapy-Sessions-Vol10-New/cover.jpg">
 
-    
+<style>
 
+:root {
+    --bg: #10100f;
+    --bg-soft: #171614;
+    --card: #1d1b18;
+    --card-hover: #25221e;
+    --cream: #eee5d3;
+    --muted: #a9a092;
+    --gold: #c9a66b;
+    --gold-soft: #9f8050;
+    --line: rgba(238,229,211,0.12);
+    --white: #f7f3eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--cream);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 22px 55px;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(to bottom, rgba(10,10,9,0.15), rgba(10,10,9,0.92)),
+        url("cover.jpg") center/cover no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.25),
+        transparent 45%,
+        rgba(0,0,0,0.65)
+    );
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.brand {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: var(--gold);
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 82px);
+    line-height: 0.98;
+    font-weight: normal;
+    margin: 0;
+    color: var(--white);
+}
+
+.hero-script {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(36px, 8vw, 70px);
+    color: var(--gold);
+    margin-top: 12px;
+}
+
+.hero-subtitle {
+    margin-top: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: var(--cream);
+}
+
+.hero-credit {
+    margin-top: 28px;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 22px;
+    border: 1px solid var(--gold);
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+/* GENERAL */
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 85px 22px;
+}
+
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: clamp(30px, 6vw, 48px);
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 24px;
+}
+
+.section p {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 720px;
+}
+
+/* INTRO */
+
+.intro {
+    background: var(--bg-soft);
+}
+
+.quote {
+    border-left: 2px solid var(--gold);
+    padding-left: 22px;
+    margin: 35px 0;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--cream);
+}
+
+/* SESSION */
+
+.session-header {
+    margin-bottom: 45px;
+}
+
+.session-header p {
+    margin-top: 15px;
+}
+
+/* TRACKS */
+
+.track-list {
+    border-top: 1px solid var(--line);
+}
+
+.track {
+    border-bottom: 1px solid var(--line);
+}
+
+.track-button {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: var(--cream);
+    padding: 23px 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.track-button:hover {
+    background: var(--card);
+}
+
+.track-number {
+    width: 42px;
+    color: var(--gold);
+    font-size: 13px;
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-title {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.track-artist {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.track-arrow {
+    color: var(--gold);
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.track.open .track-arrow {
+    transform: rotate(45deg);
+}
+
+.story {
+    display: none;
+    padding: 0 22px 30px 47px;
+    background: var(--card);
+}
+
+.track.open .story {
+    display: block;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.story-block h4 {
+    margin: 0 0 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    font-size: 10px;
+}
+
+.story-block p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.curation {
+    padding-top: 25px;
+}
+
+.curation h4 {
+    margin: 0 0 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    font-size: 10px;
+}
+
+.curation p {
+    margin: 0;
+    color: var(--cream);
+    font-size: 15px;
+}
+
+/* CONVERSATION */
+
+.conversation {
+    background: var(--bg-soft);
+}
+
+.conversation-box {
+    padding: 35px;
+    border: 1px solid var(--line);
+    background: var(--card);
+}
+
+.conversation-box p {
+    max-width: none;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 65px 22px;
+    text-align: center;
+    border-top: 1px solid var(--line);
+}
+
+.footer-brand {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--gold);
+    font-size: 11px;
+}
+
+.footer-title {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer-small {
+    margin-top: 35px;
+    font-size: 11px;
+    color: #716b62;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .story {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .track-button {
+        padding: 20px 0;
+    }
+
+    .track-number {
+        width: 35px;
+    }
+
+    .track-title {
+        font-size: 16px;
+    }
+
+    .conversation-box {
+        padding: 25px;
+    }
+
+}
+
+</style>
+</head>
 
 <body>
-  <p>
-    Taking you to The Therapy Sessions Vol. 10...
-  </p>
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="brand">
+            The Music Therapy Room
+        </div>
+
+        <h1>
+            The Therapy Sessions<br>
+            Vol. 10
+        </h1>
+
+        <div class="hero-script">
+            After The Conversation
+        </div>
+
+        <div class="hero-subtitle">
+            A New Age RnB & Soul Offering
+        </div>
+
+        <div class="hero-credit">
+            Curated & Mixed by Mpho Mofokeng<br>
+            The Music Therapist
+        </div>
+
+        <a href="#session" class="hero-button">
+            Enter The Session
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- INTRO -->
+
+<section class="section intro">
+
+    <div class="section-label">
+        Welcome
+    </div>
+
+    <h2>
+        What happens after the conversation?
+    </h2>
+
+    <p>
+        Sometimes the conversation ends, but the feeling doesn't.
+        There are thoughts still moving, questions still sitting,
+        and things we haven't quite found the words for.
+    </p>
+
+    <p>
+        This session lives in that space.
+    </p>
+
+    <div class="quote">
+        "Same conversations. Different versions. A better us."
+    </div>
+
+    <p>
+        The Therapy Sessions Vol. 10 is a collection of New Age RnB,
+        Soul, Alternative RnB, Jazz and Hip Hop influenced sounds.
+        Each record carries its own story. Together, they create another
+        conversation.
+    </p>
+
+</section>
+</section>
+
+<!-- ARTWORK -->
+<section class="section" id="artwork">
+    ...
+</section>
+<!-- ARTWORK -->
+<section class="section" id="artwork">
+  <div class="section-label">The Artwork</div>
+
+  <h2>See the conversation.</h2>
 
   <p>
-    <a href="https://mphojohnmofokeng-dotcom.github.io/The-Therapy-Sessions-Vol10-New/">
-      Enter The Music Therapy Room
-    </a>
+    The front cover sets the scene. The back cover tells the story —
+    25 records, 25 moments, one continuous session.
   </p>
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+    margin-top:35px;
+  ">
+
+    <a href="cover.jpg" target="_blank" rel="noopener" style="
+      display:block;
+      background:var(--card);
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      transition:transform .25s ease;
+    ">
+      <img
+        src="cover.jpg"
+        alt="The Therapy Sessions Vol. 10 — Front Cover"
+        style="
+          width:100%;
+          height:auto;
+          border-radius:8px;
+        "
+      >
+      <div style="
+        padding:16px 5px 5px;
+        text-align:center;
+        color:var(--cream);
+        letter-spacing:2px;
+        text-transform:uppercase;
+        font-size:13px;
+      ">
+        Front Cover
+      </div>
+    </a>
+
+    <a href="back-cover.png" target="_blank" rel="noopener" style="
+      display:block;
+      background:var(--card);
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      transition:transform .25s ease;
+    ">
+      <img
+        src="back-cover.png"
+        alt="The Therapy Sessions Vol. 10 — Back Cover and Tracklist"
+        style="
+          width:100%;
+          height:auto;
+          border-radius:8px;
+        "
+      >
+      <div style="
+        padding:16px 5px 5px;
+        text-align:center;
+        color:var(--cream);
+        letter-spacing:2px;
+        text-transform:uppercase;
+        font-size:13px;
+      ">
+        Back Cover · Tracklist
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- SESSION -->
+
+<section class="section" id="session">
+
+    <div class="session-header">
+
+        <div class="section-label">
+            The Session
+        </div>
+
+        <h2>
+            25 records.<br>
+            25 stories.
+        </h2>
+
+        <p>
+            Don't just listen to the music. Explore where it came from,
+            who made it, and what was happening around it.
+        </p>
+
+    </div>
+
+
+    <div class="track-list">
+
+
+        <!-- 01 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">01</div>
+
+                <div class="track-info">
+                    <div class="track-title">Disclosure</div>
+                    <div class="track-artist">Jill Scott</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary Jill Scott release included in
+                            her 2026 work, To Whom This May Concern.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Jill Scott, with production and musical
+                            collaborators credited on the release.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The song sits within Jill Scott's continued
+                            exploration of relationships, honesty and
+                            emotional self-expression.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        The session needs an opening that feels like
+                        somebody has finally decided to say what they
+                        actually feel.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">02</div>
+
+                <div class="track-info">
+                    <div class="track-title">All Because of Love</div>
+                    <div class="track-artist">Cleo Sol</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released in 2026 as part of Cleo Sol's
+                            album Gentlewoman.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Cleo Sol and her production collaborators,
+                            within the Gentlewoman project.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            Gentlewoman explores honesty, strength,
+                            faith and love through life's challenges.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        After the opening confession, love becomes the
+                        thing we have to examine.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">03</div>
+
+                <div class="track-info">
+                    <div class="track-title">In the Name of Love</div>
+                    <div class="track-artist">Victoria Noelle</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released June 21, 2025.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Written, produced and performed by
+                            Victoria Noelle.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            Victoria Noelle presents the song as a
+                            personal expression built around love.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Love can be the reason for staying, leaving,
+                        forgiving or starting again.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">04</div>
+
+                <div class="track-info">
+                    <div class="track-title">In Heaven</div>
+                    <div class="track-artist">FKJ</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary FKJ release within his
+                            evolving electronic and soul influenced work.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            FKJ and the musicians and producers credited
+                            around the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A documented writing story for this track
+                            is not widely available in the sources checked.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        This is the first moment where the room gets
+                        quiet enough to breathe.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">05</div>
+
+                <div class="track-info">
+                    <div class="track-title">Flowers in Bloom</div>
+                    <div class="track-artist">Tom Misch</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released in 2026 as part of Tom Misch's
+                            contemporary work.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Tom Misch, Jimmy Napes and Matt Maltese are
+                            credited as songwriters.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The song reflects themes of healing,
+                            change, nature and allowing life to move.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Sometimes growth isn't dramatic. Sometimes
+                        something simply begins to bloom.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">06</div>
+
+                <div class="track-info">
+                    <div class="track-title">Laconic Gesture</div>
+                    <div class="track-artist">Arkose</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released June 13, 2025 on Diamond in the
+                            Rough Beat Tape, Vol. 2.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Arkose.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public writing story for the track
+                            is not widely documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        A small instrumental moment can say more than
+                        another conversation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 07 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">07</div>
+
+                <div class="track-info">
+                    <div class="track-title">Discomfort Zone</div>
+                    <div class="track-artist">Nisa Faro</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Nisa Faro's work from the Unlimited era,
+                            released in the early 2020s.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Nisa Faro and collaborators associated with
+                            the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public writing explanation for
+                            this particular track is not documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Growth rarely happens inside the comfortable
+                        part of the room.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 08 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">08</div>
+
+                <div class="track-info">
+                    <div class="track-title">Play On</div>
+                    <div class="track-artist">Melody Kin</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary release from Melody Kin.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Melody Kin and the musicians credited on
+                            the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A specific documented writing story was not
+                            available in the sources checked.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        The conversation doesn't have to stop just
+                        because the words do.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 09 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">09</div>
+
+                <div class="track-info">
+                    <div class="track-title">Dreams / Preroll</div>
+                    <div class="track-artist">Nisa Faro</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released November 3, 2021 on the
+                            Unlimited EP.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Nisa Faro, with Lucas Quinn credited as
+                            executive producer on the EP.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public explanation of the writing
+                            of this specific track is not documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Dreams belong in the room too. They often tell
+                        us what we haven't said out loud.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">10</div>
+
+                <div class="track-info">
+                    <div class="track-title">Heaven</div>
+                    <div class="track-artist">Masego</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released in July 2026 on Fix Your Face.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Masego, with Emily Bear and Irving Berlin
+                            among the credited writers.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            Masego described the song as honouring
+                            his upbringing.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        We all carry pieces of where we came from.
+                        Sometimes healing means looking back differently.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 11 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">11</div>
+
+                <div class="track-info">
+                    <div class="track-title">Let Me Grow</div>
+                    <div class="track-artist">Threetwenty</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released March 20, 2025.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Written by Filip Hunter and Ivana Hunter.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The song speaks about personal journey,
+                            loss, breaking old chains, truth, love,
+                            hope and the need to grow.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        This is the point in the conversation where
+                        growth stops being an idea and becomes a choice.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 12 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">12</div>
+
+                <div class="track-info">
+                    <div class="track-title">Nguwe</div>
+                    <div class="track-artist">Oriiginelle</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released May 9, 2025.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Songwriters Makhosazana Thwala and
+                            Phologo Judah Mataboge. Produced by
+                            Vuyolwethu Biyela.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The lyrics explore inner voices,
+                            unlearning, laying your cards down and
+                            remaining true to yourself.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        This feels like the moment when we stop
+                        performing for everyone else.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 13 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">13</div>
+
+                <div class="track-info">
+                    <div class="track-title">Don't Play</div>
+                    <div class="track-artist">Jill Scott</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released February 13, 2026 on
+                            To Whom This May Concern.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Jill Scott and Marcus Christopher White
+                            are credited performers, with Seige
+                            Monstracity credited as producer.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public explanation of the
+                            writing of this particular song is limited.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Sometimes the conversation needs boundaries.
+                        Not every feeling deserves another round.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 14 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">14</div>
+
+                <div class="track-info">
+                    <div class="track-title">Kryptonite</div>
+                    <div class="track-artist">Delishia J</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released March 2, 2026.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Delishia J.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A specific documented writing story was not
+                            available in the sources checked.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Everybody has something that gets through the
+                        armour. That's part of being human.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 15 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">15</div>
+
+                <div class="track-info">
+                    <div class="track-title">Living Water</div>
+                    <div class="track-artist">Victoria Noelle</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released August 3, 2025.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Victoria Noelle is credited as songwriter,
+                            with Kulturekat credited as producer.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The song uses spiritual imagery around
+                            living water, angels and gratitude to God.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        After all the questioning, sometimes we need
+                        something deeper than an answer.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 16 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">16</div>
+
+                <div class="track-info">
+                    <div class="track-title">Feedback</div>
+                    <div class="track-artist">Ekene</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary release from Ekene.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Ekene and the collaborators credited on
+                            the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public writing story for this
+                            specific track is not documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Every conversation leaves feedback.
+                        The question is what we do with it.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 17 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">17</div>
+
+                <div class="track-info">
+                    <div class="track-title">Mapula</div>
+                    <div class="track-artist">Marcus Harvey</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary South African release.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Marcus Harvey.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public writing story for the
+                            track is not documented in the sources checked.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        A South African voice belongs naturally in
+                        this conversation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 18 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">18</div>
+
+                <div class="track-info">
+                    <div class="track-title">No One But You</div>
+                    <div class="track-artist">Justin Nozuka & Mahalia</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Written several years before its later
+                            performances and collaboration became public.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Justin Nozuka and Mahalia.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            Nozuka explained that he wrote it about
+                            someone who made him feel light and able
+                            to be himself without a wall.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        There is something powerful about finding a
+                        person around whom you don't have to perform.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 19 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">19</div>
+
+                <div class="track-info">
+                    <div class="track-title">Echos</div>
+                    <div class="track-artist">Erykah Badu & The Alchemist</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released August 28, 2026 on
+                            Before The World Blows.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Erykah Badu and The Alchemist,
+                            credited as composers and producers.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The album was developed over approximately
+                            18 months between Dallas and Los Angeles.
+                            The individual writing story for Echos is
+                            not separately documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        At this point the session needs something that
+                        feels bigger than the room.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 20 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">20</div>
+
+                <div class="track-info">
+                    <div class="track-title">Apple Juice</div>
+                    <div class="track-artist">Rapsody</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released July 31, 2026.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Rapsody and the collaborators credited
+                            on the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A specific documented writing story was not
+                            available in the sources checked.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        The session can be reflective without becoming
+                        heavy. We still need movement.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 21 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">21</div>
+
+                <div class="track-info">
+                    <div class="track-title">Energy</div>
+                    <div class="track-artist">Tiana Major9 & Keyon Harrold</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released January 13, 2026.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Tiana Major9, JLL, PRGRSHN and Keyon Harrold,
+                            among the musicians and collaborators around
+                            the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            Tiana said she wrote the song in Jamaica
+                            during a transitional period in her life
+                            and career. The groove draws from reggae,
+                            lovers rock and music she grew up with.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        This is where the energy changes. The conversation
+                        becomes movement.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 22 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">22</div>
+
+                <div class="track-info">
+                    <div class="track-title">Rather Be Alone</div>
+                    <div class="track-artist">Betty Brown</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released in February 2024.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Written by Ntombikayise Ncongwane.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The lyrics focus on solitude, staying
+                            focused, personal growth and leaving
+                            distractions behind.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Sometimes being alone isn't loneliness.
+                        Sometimes it is how we hear ourselves again.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 23 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">23</div>
+
+                <div class="track-info">
+                    <div class="track-title">CPR</div>
+                    <div class="track-artist">Summer Walker</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A Summer Walker recording included in
+                            contemporary RnB.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Summer Walker and the collaborators
+                            credited on the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A specific documented writing story for
+                            this track is not included here rather
+                            than filling the gap with speculation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Every session eventually reaches the place
+                        where something has to be revived.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 24 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">24</div>
+
+                <div class="track-info">
+                    <div class="track-title">Faith in Substance</div>
+                    <div class="track-artist">Threetwenty</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            A contemporary Threetwenty release.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Threetwenty and the collaborators credited
+                            on the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            A detailed public writing story for this
+                            specific recording is not documented here.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        Towards the end of the session, faith becomes
+                        less about certainty and more about continuing.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 25 -->
+
+        <div class="track">
+
+            <button class="track-button">
+
+                <div class="track-number">25</div>
+
+                <div class="track-info">
+                    <div class="track-title">Crossfade</div>
+                    <div class="track-artist">Erykah Badu & The Alchemist</div>
+                </div>
+
+                <div class="track-arrow">+</div>
+
+            </button>
+
+            <div class="story">
+
+                <div class="story-grid">
+
+                    <div class="story-block">
+                        <h4>When</h4>
+                        <p>
+                            Released August 28, 2026 on
+                            Before The World Blows.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Who</h4>
+                        <p>
+                            Erykah Badu and The Alchemist,
+                            with additional musicians credited
+                            on the recording.
+                        </p>
+                    </div>
+
+                    <div class="story-block">
+                        <h4>Why</h4>
+                        <p>
+                            The track belongs to a project developed
+                            across approximately 18 months. The specific
+                            writing story behind Crossfade is not
+                            separately documented.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="curation">
+                    <h4>Why I placed it here</h4>
+                    <p>
+                        A crossfade doesn't really end one thing.
+                        It allows one thing to become another.
+                        That's how I wanted this session to close.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CLOSING CONVERSATION -->
+
+<section class="section conversation">
+
+    <div class="section-label">
+        After The Conversation
+    </div>
+
+    <h2>
+        The music continues.
+    </h2>
+
+    <div class="conversation-box">
+
+        <p>
+            Maybe something here reminded you of a conversation
+            you've had.
+        </p>
+
+        <p>
+            Maybe it reminded you of someone.
+        </p>
+
+        <p>
+            Maybe you simply found a song you didn't know you needed.
+        </p>
+
+        <p>
+            That's enough.
+        </p>
+
+        <p>
+            Take what you need from the session and carry it with you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- LISTEN -->
+
+<section class="section" style="text-align:center;">
+
+    <div class="section-label">
+        Listen
+    </div>
+
+    <h2>
+        Enter The Music Therapy Room.
+    </h2>
+
+    <p style="margin-left:auto;margin-right:auto;">
+        The full session is available on YouTube.
+    </p>
+
+    <a
+        class="hero-button"
+        href="https://youtu.be/fVheyheESis"
+        target="_blank"
+        rel="noopener">
+        Listen to the Full Session
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-brand">
+        The Music Therapy Room
+    </div>
+
+    <div class="footer-title">
+        The Therapy Sessions Vol. 10
+    </div>
+
+    <div class="hero-script">
+        After The Conversation
+    </div>
+
+    <p>
+        Curated & Mixed by Mpho Mofokeng<br>
+        The Music Therapist
+    </p>
+
+    <p>
+        Music Worth Listening To.
+    </p>
+
+    <div class="footer-small">
+        © 2026 The Music Therapy Room
+    </div>
+
+</footer>
+
+
+<script>
+
+const tracks = document.querySelectorAll(".track");
+
+tracks.forEach(track => {
+
+    const button = track.querySelector(".track-button");
+
+    button.addEventListener("click", () => {
+
+        tracks.forEach(otherTrack => {
+
+            if (otherTrack !== track) {
+                otherTrack.classList.remove("open");
+            }
+
+        });
+
+        track.classList.toggle("open");
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
